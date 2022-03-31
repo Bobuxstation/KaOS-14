@@ -1,6 +1,6 @@
-# KaOS 12 HTML Release 1
+# KaOS 14 HTML Release 1
 
-Welcome to kaos 12 html
+Welcome to kaos 14 html
 this version of kaos supports dragging windows and having multiple windows open at the same time
 You can also customize the system with settings
 and you can do your daily tasks with the notes app and more apps on the KASUS STORE
