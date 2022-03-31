@@ -1,0 +1,172 @@
+body {
+    overflow: hidden;
+background: lightblue;
+  font-family: none;
+  }
+  @font-face {
+      font-family: Minecraft;
+      src: url(Minecraftia.ttf);
+  }
+  footer {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    height: 45px;
+    border: black solid 2px;
+    margin: 0;
+    padding: 3;
+  }
+  .window {
+      height: 0px;
+      width: 0px;
+      display: none;
+  }
+  .header {
+     width: 600px;
+     height: 30px;
+     background-color: lightgray;
+     cursor: move;
+     border: black solid 0.5px;
+    overflow: auto;
+  }
+  .content {
+     width: 600px;
+     margin: 0;
+     padding: 0;
+     height: 450px;
+     border: black solid 0.5px;
+    background: black;
+  }
+  .headertext {
+      color: BLACK;
+      background-color: lightgray;
+      border: black solid 0px;
+      border-radius: 0px;
+      font-size: 20px;
+      padding-top: 5px;
+      border-radius: 5px 0px 0px 0px;
+      height: 30px;
+  }
+  .closebutton {
+      float: right;
+      background-color: lightgray;
+      height: 100%;
+      width: 50px;
+      font-size: 20px;
+  }
+  .closebutton:hover{
+      background-color: red;
+  }
+  .menubutton {
+      background-color: lightgray;
+      color: black;
+      float: left;
+    padding: 2;
+    height: 45;
+    padding-left: 7;
+    margin: 1;
+  }
+  li {
+      float: left;
+      display: block;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+      font-family:arial;
+  }
+  
+  nav{
+  display: inline-block;
+  }
+  #span {
+      font-size: 75px;
+      color: black;
+      text-align: center;
+  }
+  .sidebar{
+      height:20%;
+  }
+  .search {
+      margin-top: auto;
+      width: 98%;
+      background-color: gray;
+      padding: 3px;
+  }
+  .search2 {
+      width: 98%;
+      background-color: gray;
+      padding: 3px;
+  }
+  .sidebar2 {
+      height: 70.5%;
+      width:306px;
+      position:fixed!important;
+      z-index:1;
+      overflow:auto;
+      padding: 2.5px;
+      border: black solid 2px;
+      background-color: lightgray;
+      display: flex;
+      flex-direction: column;
+  }
+  .menubutton2 {
+      background-color: lightgray;
+      color: black;
+      float: left;
+      text-align: left;
+      font-size: 15px;
+    padding: 2;
+  }
+  .notifications {
+      height: 92.4%;
+      width:300px;
+      position:fixed!important;
+      z-index:100;
+      padding: 2.5px;
+      border: black solid 2px;
+      background-color: lightgray;
+      right:0;
+      top: -1;
+      display: none;
+  }
+  .list {
+      width: 60%;
+      margin: auto;
+  }
+    .minimize {
+      float: right;
+      background-color: lightgray;
+      height: 100%;
+      width: 50px;
+      font-size: 20px;
+  }
+  .minimize:hover{
+      background-color: red; 
+  }
+    .menubuttonminimized {
+      background-color: gray;
+      color: black;
+      float: left;
+      padding: 1px;
+      font-size: 15px;
+      margin: 2px;
+  }
+.notification {
+      background-color: gray;
+    padding: 5px;
+  color: white;
+}
+fieldset {
+  padding: 5px;
+  font-family:arial;
+}
+button {
+  background: lightgray;
+}
+input {
+  background: lightgray;
+  border-radius: 0;
+}

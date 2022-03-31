@@ -1,0 +1,191 @@
+<html>
+<head><title>User 1 - Kaos 14</title>
+<!--Scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="close.js"></script>
+<script type="text/javascript" src="minimize.js"></script>
+<script type="text/javascript" src="Settings.js"></script>
+<link rel="stylesheet" href="style.css" id="style">
+<link rel="stylesheet" href="scroll.css">
+<script src="https://kit.fontawesome.com/970a0290cd.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+
+
+<div class="sidebar"></div>
+<div class="sidebar2" id="Sidebar">
+<div class="search2"><img src="Icons/user.png" style="float: left; height: 50px; width: 55px;"></img><h1 style="text-align: right; float: right">User1ㅤㅤㅤㅤ</h1></div><br>
+
+<button onclick="Closetestwindow2()" class="menubutton2"><img src="Icons/mememaker.png" style="height: 40px; width: 40px;"></img> Meme Maker</button><br>
+<button onclick="Closetestwindow3()" class="menubutton2"><img src="Icons/notes.png" style="height: 40px; width: 40px;"></img> Notes</button><br>
+<button onclick="Closetestwindow()" class="menubutton2"><img src="Icons/filesicon.png" style="height: 40px; width: 40px;"></img> Files</button><br>
+<button onclick="Closetestwindow4()" class="menubutton2"><img src="Icons/media.png" style="height: 40px; width: 40px;"></img> Media</button><br>
+<button onclick="Closetestwindow5()" class="menubutton2"><img src="Icons/Store.png" style="height: 40px; width: 40px;"> Store</img></button><br>
+<button onclick="Closetestwindowterminal()" class="menubutton2"><img src="Icons/terminal.png" style="height: 40px; width: 40px;"> System Terminal</img></button>
+
+<div class="search">
+<input style="height: 22px; border: none; width: 65.5%;">
+
+<button style="width: 7%; height: 22px; border-radius: 0px; border: black solid 0px; background-color: #717539;" onclick="NotificationMenu()"><i class="fa-solid fa-message"></i></button>
+
+<button style="width: 7%; background-color: #717539; border: black solid 0px; height: 22px;" onclick="Closetestwindow6()"><i class="fa-solid fa-gear"></i></button>
+
+<button onclick="Closetestwindow7()" style="width: 7%; height: 22px; background-color: #717539; border: black solid 0px;"><i class="fa-solid fa-circle-info"></i></button>
+
+<a href="index.html"><button style="width: 7%; height: 22px; background-color: #717539; border: black solid 0px;"><i class="fa-solid fa-power-off"></i></button></a>
+</div>
+</div>
+
+<div class="notifications" id="Sidebar2">
+<h3 style="text-align: center;">Notifications Center</h3><br>
+<ul id="list" class="list">
+</ul>
+</div>
+<script type="text/javascript" src="notify.js"></script>
+
+
+<!--Window-->
+
+<section style="height: 615px; ">
+    <h1 id="span" style=" text-shadow: -1px -1px 0 white,-1px 0px 0 white,-1px 1px 0 white,0px -1px 0 white,0px 0px 0 white,0px 1px 0 white,1px -1px 0 white,1px 0px 0 white,1px 1px 0 white; z-index:-1; text-align: center;">TIME</h1>
+
+<div class="window" id="window">
+ <div class="header"><button class="headertext"> Files</button><button onclick="Closetestwindow()" class="closebutton">X</button><button onclick="minimize()" class="minimize">_</button></div>
+ <div class="content"><iframe src="" id="file" width="600" height="450" style=" border: black solid 0px;"></iframe></div></div>
+
+
+<div class="window" id="window2">
+<div class="header"><button class="headertext"> Meme Maker</button><button onclick="Closetestwindow2()" class="closebutton">X</button><button onclick="minimize2()" class="minimize">_</button></div>
+<div class="content"><iframe src="" id="mememaker" width="600" height="450" style=" border: black solid 0px;"></iframe></div></div>
+
+
+<div class="window" id="window3">
+<div class="header"><button class="headertext" onclick="saveTXT()"> Notes</button><button onclick="Closetestwindow3()" class="closebutton">X</button><button onclick="minimize3()" class="minimize">_</button></div>
+<div class="content"><textarea id="msg" style=" border: black solid 0px; width: 600; height: 450; resize: none; opacity: .95;"></textarea></div></div>
+
+
+<div class="window" id="window4">
+<div class="header"><button class="headertext"> Media</button><button onclick="Closetestwindow4()" class="closebutton">X</button><button onclick="minimize4()" class="minimize">_</button></div>
+<div class="content"><iframe src="" id="media" style=" border: black solid 0px; width: 600; height: 450; resize: none;"></iframe></div></div>
+
+
+<div class="window" id="window5">
+<div class="header"><button class="headertext"> Store</button><button onclick="Closetestwindow5()" class="closebutton">X</button><button onclick="minimize5()" class="minimize">_</button></div>
+<div class="content"><iframe src="" id="store" width="600" height="450" style=" border: black solid 0px; background-color: white;"></iframe>
+</div></div>
+
+
+<div class="window" id="window7">
+<div class="header"><button class="headertext"> About</button><button onclick="Closetestwindow7()" class="closebutton">X</button><button onclick="minimize6()" class="minimize">_</button></div>
+<div class="content"><iframe src="version.html" width="600" height="450" style=" border: black solid 0px; background-color: white;"></iframe>
+</div></div>
+
+<div class="window" id="terminal">
+<div class="header"><button class="headertext"> System Terminal</button><button onclick="Closetestwindowterminal()" class="closebutton">X</button><button onclick="minimize8()" class="minimize">_</button></div>
+<div class="content">
+<iframe id="terminalframe" src="" width="600" height="450" style=" border: black solid 0px; background-color: white;"></iframe>
+</div></div>
+
+<div class="window" id="window6">
+<div class="header" id="header"><button class="headertext"> Settings</button><button onclick="Closetestwindow6()" class="closebutton">X</button><button onclick="minimize7()" class="minimize">_</button></div>
+<div class="content" style="width: 600px;">
+    <div class="settingssidebar" style="background-color: #75cbed; opacity: .65; width: 105.30px; float: left; height: 450px;">
+        <br><H4 style="background-color: white;">⚙ General</H4>
+        <br><H4>🎨 Themes</H4>
+        <br><H4>🕒 Time</H4>
+        <br><h4>❓ About</h4>
+        <br><h4 onclick="notifications('Test notification appended...')">⚠️ Beta</h4>
+    </div>
+    <div class="Settings" style="background-color: white; float: right; width: 484.7px; height: 440px; padding: 5px; opacity: .95; overflow: auto;">
+
+
+<fieldset>
+<legend>Background/Wallpaper</legend>
+<button onclick="bg1()">Normal</button><br><br>
+<button onclick="bg2()">City With Water</button><br><br>
+<button onclick="bg3()">Flowers</button><br><br>
+<button onclick="bg4()">Boardwalk</button><br><br>
+<input type="file" accept="image/*" onchange="custom_bg(event)">
+</fieldset>
+
+<fieldset>
+<legend>Color Scheme</legend>
+<button onclick="color1()">Reset Color</button><br><br>
+<input type="color" id="color" style="height: 21px;"> <button onclick="getcolor()">Set</button>
+</fieldset>
+
+<fieldset>
+<legend>Themes</legend>
+<button onclick="theme1()">Default</button><br><br>
+<button onclick="theme2()">Classic</button><br><br>
+<button onclick="theme3()">Dark</button><br><br>
+<input id="cssimport" placeholder="Import Theme"></input> <button onclick="cssimport()">Import</button>
+</fieldset>
+
+<fieldset>
+<legend>My Kasius Devices (Coming Soon)</legend>
+<button>Monitor</button><br><br>
+<button>Keyboard</button><br><br>
+<button>Mouse</button><br><br>
+<button>+ Add A Device</button>
+</fieldset>
+
+<fieldset>
+<legend>Updates</legend>
+<p>You Are Using The Latest Version!</p><br>
+<a href="https://zeankundev.github.io/KaOS-13/setup/"><button>Downgrade To Kaos 13!</button></a>
+</fieldset>
+</div>
+
+
+
+
+
+
+</section>
+
+
+<!--Footer-->
+
+<footer>
+<button onclick="menu()" class="menubutton" style="width: 75px; padding-top: 0px; background-color: #0092cc;"><img src="costume2.svg" style="height: 30px; width: 30px; padding-top: 0px;"></img></button>&nbsp;
+<nav><ul id="footer">
+<li><button onclick="Closetestwindow2()" class="menubutton"><img src="Icons/mememaker.png" style="height: 25px; width: 25px;"></img>&nbsp;&nbsp;</button></li>
+<li><button onclick="Closetestwindow3()" class="menubutton"><img src="Icons/notes.png" style="height: 25px; width: 25px;"></img>&nbsp;&nbsp;</button></li>
+<li><button onclick="Closetestwindow()" class="menubutton"><img src="Icons/filesicon.png" style="height: 25px; width: 25px;"></img>&nbsp;&nbsp;</button></li>
+
+
+<li><button onclick="minimize()" class="menubuttonminimized" id="minimizedfiles"><img src="Icons/filesicon.png" style="height: 25px; width: 25px;"></img>&nbsp;</button></li>&nbsp;
+<li><button onclick="minimize2()" class="menubuttonminimized" id="minimizedmeme"><img src="Icons/mememaker.png" style="height: 25px; width: 25px;"></img>&nbsp;</button></li>&nbsp;
+<li><button onclick="minimize3()" class="menubuttonminimized" id="minimizednotes"><img src="Icons/notes.png" style="height: 25px; width: 25px;"></img>&nbsp;</button></li>&nbsp;
+<li><button onclick="minimize4()" class="menubuttonminimized" id="minimizedmedia"><img src="Icons/media.png" style="height: 25px; width: 25px;"></img>&nbsp;</button></li>&nbsp;
+<li><button onclick="minimize5()" class="menubuttonminimized" id="minimizedstore"><img src="Icons/Store.png" style="height: 25px; width: 25px;"></img>&nbsp;</button></li>&nbsp;
+<li><button onclick="minimize6()" class="menubuttonminimized" id="minimizedabout"><i style="height: 25px; width: 25px;" class="fa-solid fa-circle-info"></i>&nbsp;</button></li>&nbsp;
+<li><button onclick="minimize7()" class="menubuttonminimized" id="minimizedsettings"><i style="height: 25px; width: 25px;" class="fa-solid fa-gear"></i>&nbsp;</button></li>&nbsp;
+<li><button onclick="minimize8()" class="menubuttonminimized" id="minimizedterminal"><img src="Icons/terminal.png" style="height: 25px; width: 25px;"></img>&nbsp;</button></li>&nbsp;
+</ul></nav>
+
+
+</footer>
+
+
+
+
+<script>
+$( ".window" ).draggable({ handle: ".header" });
+document.getElementById("minimizedfiles").style.display = "none";
+document.getElementById("minimizedmeme").style.display = "none";
+document.getElementById("minimizednotes").style.display = "none";
+document.getElementById("minimizedmedia").style.display = "none";
+document.getElementById("minimizedstore").style.display = "none";
+document.getElementById("minimizedabout").style.display = "none";
+document.getElementById("minimizedsettings").style.display = "none";
+document.getElementById("minimizedterminal").style.display = "none";
+</script>
+<script type="text/javascript" src="note.js"></script>
+<script type="text/javascript" src="time.js"></script>
+<script type="text/javascript" src="notify.js"></script>
+</body>
+</html>

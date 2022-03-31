@@ -1,0 +1,90 @@
+<html lang="en">
+<head><title>Kaos 12 - Login</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/970a0290cd.js" crossorigin="anonymous"></script>
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	font-family: Inter;
+	text-align: center;
+}
+.options {
+	outline: 1px solid black;
+	height: 100%;
+	width: 100%;
+	padding: 15px;
+	box-shadow: 2.5px 2.5px black;
+    margin: auto;
+    backdrop-filter: blur(10px);
+ 	webkit-backdrop-filter: blur(10px);
+}
+section {
+	Background-image: url("bg.jpg") ;
+	height: 100%;
+	width: 100%;
+}
+button {
+	padding: 5px;
+	float: middle;
+	font-weight: bold;
+	width: 89.31;
+	border-radius: 5px;
+	border: black solid 1px;
+}
+nav {
+	display: inline-block;
+}
+li {
+    float: left;
+    display: block;
+}
+button:hover {
+	background-color: lightgray;
+}
+
+</style>
+</head>
+<body><section>
+	<div class="options">
+		<H1 style="font-size: 25px; text-align: center; text-shadow: -1px -1px 0 white,-1px 0px 0 white,-1px 1px 0 white,0px -1px 0 white,0px 0px 0 white,0px 1px 0 white,1px -1px 0 white,1px 0px 0 white,1px 1px 0 white; z-index:-1;" id="text">Sign in</H1><br><br><br><br><br><br><br><br><br>
+		<nav><ul>
+		<li><a href="kaostest.html"><button onmouseover="loginuser1()"><img src="Icons/user.png" style="height: 52; width: 58;"></img>User1</button></a>&nbsp;</li>
+		<li><a onclick="login2()"><button onmouseover="loginuser2()"><img src="Icons/notes.png" style="height: 52; width: 58;"></img>User2</button>&nbsp;</li></a>
+		</ul></nav><br><br>
+<button style="width: 25px; background-color: #717539; border-radius: 5px;" onclick="window.close() ;"><i class="fa-solid fa-power-off"></i> </button>&nbsp;
+<button style="width: 25px; background-color: #717539; border-radius: 5px;"><i class="fa-solid fa-gear"></i></button>&nbsp;
+<button style="width: 25px; background-color: #717539; border-radius: 5px;"><i class="fa-solid fa-info"></i></button><br><br>
+<script>
+function loginuser1() {
+document.getElementById("text").innerHTML = "Welcome, User1!";
+}
+function loginuser2() {
+document.getElementById("text").innerHTML = "Welcome, User2!";
+}
+</script>
+<SCRIPT>
+function login2() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1.toLowerCase() == "69420") {
+alert('You Got it Right!');
+window.location.replace("kaostest2.html");
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+</SCRIPT>
+</div></section>
+</body>
+</html>
