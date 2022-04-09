@@ -45,3 +45,6 @@ function theme2() {
 function theme3() {
   document.getElementById("style").href = "darkmode.css";
 }
+function theme4() {
+  document.getElementById("style").href = "lightmode.css";
+}
