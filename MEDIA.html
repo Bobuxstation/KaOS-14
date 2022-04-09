@@ -2,6 +2,7 @@
     <head>
         <script type="text/javascript" src="media.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="scroll.css">
         <style>
         * {
             margin: 0;
@@ -12,7 +13,7 @@
         button {
             padding: 2px;
             background-color: lightgrey;
-            width: 25%;
+            width: 100px;
             border-radius: 5px;
             height: 75px;
         }
@@ -28,33 +29,64 @@ input:hover {
     background: #333333;
     padding: 0;
     height: 23px;
-    border-radius: 5px 5px 0px 0px;
 }
 #samplevid {
     margin: auto;
     width: 75%;
 }
-::file-selector-button { font-size: initial; color: white; background: #333333; border: white solid 1px; float: right; height: 23px;}
-.menubutton { font-size: initial; color: white; background: #333333; border: white solid 1px; height: 23px; border-radius: 5px 0px 0px 0px; float: left; width: 125px; padding: 0;}
-#left {float: left;}
-#right {float: right;}
+::file-selector-button { 
+font-size: initial; 
+color: white; 
+background: #333333; 
+border: white solid 1px; 
+float: right; 
+height: 23px;
+}
+.menubutton {
+ font-size: initial;
+ color: white;
+ background: #333333; 
+ border: white solid 1px; 
+ height: 23px; 
+ border-radius: 0px; 
+ float: left; 
+ width: 125px; 
+ padding: 0;
+}
 .menubutton:hover {
     background-color: #1d1d1d;
+}
+.content {
+    width: 600px;
+    height: 427px;
+    float: left;
+}
+.presetmedia {
+    width: 182px;
+    height: 427px;
+    float: right;
+    overflow: auto;
 }
         </style>
     </head>
     <body id="body" style="background-color: white;">
-        <section style="height: 615px; ">
-        <div class="div"><input type="file" accept="video/*" onchange="custom_video(event)">
+        <section>
+        <div class="div">
+            <input type="file" accept="video/*" onchange="custom_video(event)">
             <button  onclick="loadlink()" class="menubutton">Load From Link</button></div>
-        <div class="content"><video src="" id="mediavid" controls style="border-radius: 0px 0px 5px 5px; border: black solid 0px; width: 100%; height: 300; background-color: black;"></video>
-<br><br><br>
+        <div class="content">
+        <video src="" id="mediavid" controls style=" border: black solid 0px; width: 100%; height: 100%; background-color: black;"></video></div>
+           
+        <div class="presetmedia"> 
             <h1>Preset video</h1><br>
         <div id="samplevid">
-        <button onclick="vid1()" id="left">Morshu RTX Finds Diamond.MP4</button>
-        <button onclick="vid2()" id="right">Sigma.MP3</button>
-        <button onclick="vid3()" id="left">BDP SMP TOUR.MP4</button>
-        <button onclick="vid4()" id="right">Morning Bells - Meme Forest OST.WAV</button>
+        <button onclick="vid1()" id="left">Morshu RTX Finds Diamond.MP4</button><br><br>
+        <button onclick="vid2()" id="right">Sigma.MP3</button><br><br>
+        <button onclick="vid3()" id="left">BDP SMP TOUR.MP4</button><br><br>
+        <button onclick="vid4()" id="right">Morning Bells - Meme Forest OST.WAV</button><br><br>
+        <h1>Watch Online</h1><br>
+        <button onclick="vid5()" id="right">Lookeloo</button><br><br>
+        <button onclick="vid6()" id="right">YouSul</button><br><br>
         </div>
     </body>
 </html>

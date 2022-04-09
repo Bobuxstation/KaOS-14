@@ -11,7 +11,10 @@ function vid4() {
    var video = document.getElementById("mediavid"); video.src = ("medias/memeforest.wav");
 }
 function vid5() {
-   var video = document.getElementById("mediavid"); video.src = ("https://www.youtube.com/embed/0BNrTww3olE");
+   window.location.replace("https://lookeeloo-vid.web.app/");
+}
+function vid6() {
+   window.location.replace("https://zeanfender11.wixsite.com/yousul");
 }
 function custom_video(event) {
    var reader = new FileReader();
