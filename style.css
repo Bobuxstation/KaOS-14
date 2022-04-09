@@ -191,6 +191,7 @@ fieldset {
 }
 .settingssidebar {
   backdrop-filter: blur(5px);
+  background-color: #75cbed;
   webkit-backdrop-filter: blur(5px);
 }
 .Settings {

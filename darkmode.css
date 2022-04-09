@@ -1,0 +1,220 @@
+body {
+    font-family: Inter !important;
+    background-image: url("bg.jpg");
+    overflow: hidden;
+    background-size: cover;
+  }
+  footer {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1d1d1d80;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(9px);
+  }
+  .window {
+      height: 0px;
+      width: 0px;
+      display: none;
+  }
+  .header {
+     width: 604px;
+     height: 30px;
+     background-color: #1d1d1dA6;
+     cursor: move;
+     border-radius: 2.5px 2.5px 0px 0px;
+     overflow: auto;
+     backdrop-filter: blur(5px);
+     webkit-backdrop-filter: blur(5px);
+    
+  }
+  .content {
+     width: 600px;
+     margin: 0;
+     padding: 0;
+     height: 450px;
+     border-radius: 0px 0px 2.5px 2.5px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border:  #1d1d1dA6 solid 2px;
+  }
+  .headertext {
+      color: white;
+      background: NONE;
+      border: black solid 0px;
+      font-family: Inter;
+      font-size: 15px;
+      padding-top: 5px;
+      height: 30px;
+      padding-left: 5px;
+  }
+  .closebutton {
+      float: right;
+      background: NONE;
+      height: 100%;
+      width: 50px;
+      border: black solid 0px;
+      border-radius: 0px 2.5px 0px 0px;
+      font-size: 20px;
+      color: white;
+  }
+  .closebutton:hover{
+      background-color: red;
+      border: black solid 0px;
+  
+  }
+  .menubutton {
+      background-color: #00a9ec00;
+      border: black solid 0px;
+      color: black;
+      float: left;
+      background-image:url("");
+  }
+  li {
+      float: left;
+      display: block;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  
+  nav{
+      display: inline-block;
+  }
+  #span {
+      font-size: 75px;
+      color: black;
+      text-align: center;
+  }
+  .sidebar{
+      height:16.6%;
+  }
+  .search {
+      margin-top: auto;
+      width: 98%;
+      background-color: #23232366;
+      padding: 3px;
+    border-radius: 2px;
+    color: white;
+  }
+  .search2 {
+      width: 98%;
+      background-color: #23232366;
+      padding: 3px;
+      color: white;
+      border-radius: 2px;
+  }
+  .sidebar2 {
+      height: 78%;
+      width:306px;
+      position:fixed!important;
+      z-index:1;
+      overflow:auto;
+      padding: 2.5px;
+      background-color: #1d1d1d80;
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px 5px 0px 0px;
+      backdrop-filter: blur(60px);
+    
+  }
+  .menubutton2 {
+      background: none;
+      border: black solid 0px;
+      font-family: Inter;
+      color: white;
+      float: left;
+      text-align: left;
+      font-size: 20px;
+  }
+  button {
+      padding: 2px;
+    }
+  .notifications {
+      height: 100%;
+      width:300px;
+      position:fixed!important;
+      z-index:100;
+      padding: 2.5px;
+      background-color: #1d1d1d80;
+      right:0;
+      top: -1;
+      display: none;
+      border-radius: 5px;
+      backdrop-filter: blur(50px);
+      color: white;
+  }
+  .list {
+      width: 60%;
+      margin: auto;
+  }
+    .minimize {
+      float: right;
+      background: NONE;
+      height: 100%;
+      width: 50px;
+      border: black solid 0px;
+      font-size: 20px;
+      color: white;
+  }
+  .minimize:hover{
+      background-color: red;
+      border: black solid 0px;
+  
+  }
+    .menubuttonminimized {
+      background-color: #0092cc;
+      border: black solid 0px;
+      color: black;
+      float: left;
+      padding: 2.5px;
+      font-size: 15px
+  }
+  .menubutton2:hover {
+    background-color: #23232366;
+    border-radius: 5px;
+  }
+  .menubutton:hover {
+    background-color: #232323;
+    border-radius: 5px;
+  }
+  .notification {
+    background-color: 232323;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  fieldset {
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .settingssidebar {
+    backdrop-filter: blur(5px);
+    webkit-backdrop-filter: blur(5px);
+    background: #1d1d1d;
+    color: white;
+  }
+  .Settings {
+     backdrop-filter: blur(10px);
+     webkit-backdrop-filter: blur(10px);
+  }
+    .menubuttonminimized:hover {
+        background-color:4dc0ed;
+  }
+  textarea {
+    padding: 5px;
+    font-family: Inter;
+    font-size: 20px;
+  }
+  .search i {
+    color: lightgray;
+  }
+  .search button,input {
+    border-radius: 2px;
+  }
+  .search input {
+    background-color: lightgray;
+  }
