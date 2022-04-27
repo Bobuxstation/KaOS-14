@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/970a0290cd.js" crossorigin="anonymous"></script>
+	<title>KasiusNet For KaOS 14</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.headerpart {
+			padding: 5px;
+			border: black solid 1px;
+			border-width: 0px 0px 1px 0px;
+		}
+		.headerpart button {
+			padding: 2px;
+		}
+		input {
+			height: 23px;
+			box-sizing: border-box;
+			width: 712.5px;
+		}
+		iframe {
+			background-color: lightgrey;
+			border: none;
+			width: 800px;
+			height: 412px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+<div class="headerpart">
+	<button onclick="home()"><i class="fa-solid fa-house"></i></button>
+	<input placeholder="Enter the URL here..." id="input">
+	<button onclick="go()"><i class="fa-solid fa-arrow-right"></i></button>
+	<button onclick="refresh()"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+</div>
+<iframe src="" id="iframe"></iframe>
+</body>
+<script type="text/javascript">
+	function home() {
+		document.getElementById("iframe").src = "";
+	}
+	function refresh() {
+		document.getElementById("iframe").src = document.getElementById("iframe").src;
+	}
+	function go() {
+		let inputurl = document.getElementById("input").value;
+		document.getElementById("iframe").src = inputurl;
+	}
+</script>
+</html>

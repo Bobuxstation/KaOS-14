@@ -14,7 +14,6 @@
 	outline: 1px solid black;
 	height: 100%;
 	width: 100%;
-	padding: 15px;
 	box-shadow: 2.5px 2.5px black;
     margin: auto;
     backdrop-filter: blur(10px);
@@ -22,7 +21,10 @@
 }
 section {
 	Background-image: url("bg.jpg") ;
+	background-size: cover;
 	height: 100%;
+	padding: 0;
+	margin: 0;
 	width: 100%;
 }
 button {
@@ -43,19 +45,39 @@ li {
 button:hover {
 	background-color: lightgray;
 }
-
+.users {
+	background-color: white;
+	border-radius: 5px;
+	padding: 5px;
+}
+h1 {
+  -webkit-text-stroke: 0.5px white;
+  font-size: 40px;
+}
 </style>
 </head>
 <body><section>
 	<div class="options">
-		<H1 style="font-size: 25px; text-align: center; text-shadow: -1px -1px 0 white,-1px 0px 0 white,-1px 1px 0 white,0px -1px 0 white,0px 0px 0 white,0px 1px 0 white,1px -1px 0 white,1px 0px 0 white,1px 1px 0 white; z-index:-1;" id="text">Sign in</H1><br><br><br><br><br><br><br><br><br>
 		<nav><ul>
-		<li><a href="kaostest.html"><button onmouseover="loginuser1()"><img src="Icons/user.png" style="height: 52; width: 58;"></img>User1</button></a>&nbsp;</li>
-		<li><a onclick="login2()"><button onmouseover="loginuser2()"><img src="Icons/notes.png" style="height: 52; width: 58;"></img>User2</button>&nbsp;</li></a>
-		</ul></nav><br><br>
-<button style="width: 25px; background-color: #717539; border-radius: 5px;" onclick="window.close() ;"><i class="fa-solid fa-power-off"></i> </button>&nbsp;
-<button style="width: 25px; background-color: #717539; border-radius: 5px;"><i class="fa-solid fa-gear"></i></button>&nbsp;
-<button style="width: 25px; background-color: #717539; border-radius: 5px;"><i class="fa-solid fa-info"></i></button><br><br>
+
+<div class="users">
+		<li><a onclick="aloginuser1()"><button onmouseover="loginuser1()"><img src="Icons/user.png" style="height: 50; width: 50;"></img>User1</button></a>&nbsp;</li>
+		<li><a onclick="aloginuser2()"><button onmouseover="loginuser2()"><img src="Icons/notes.png" style="height: 50; width: 50;"></img>User2</button></li></a>
+</div><br>
+		</ul></nav>
+		<H1 style="text-align: center; color: black;" id="text">Sign in</H1>
+
+<div id="user1"><br><br><br>
+	<img src="Icons/user.png" style="height: 150; width: 150;"><br><br>
+	<H1 style="text-align: center; color: black;" id="text">User1</H1><br>
+	<button style="width: 150px;" onclick="openuser1()">Sign In</button>
+</div>
+<div id="user2" style="display: none;"><br><br><br>
+	<img src="Icons/notes.png" style="height: 150; width: 150;"><br><br>
+	<H1 style="text-align: center; color: black;" id="text">User2</H1><br>
+	<input id="input" style="height: 25px; box-sizing: border-box; border-radius: 5px; margin: 0;">
+	<button style="width: 30px; margin: 0;" onclick="openuser2()"><i class="fa-solid fa-arrow-right"></i></button>
+</div>
 <script>
 function loginuser1() {
 document.getElementById("text").innerHTML = "Welcome, User1!";
@@ -63,28 +85,25 @@ document.getElementById("text").innerHTML = "Welcome, User1!";
 function loginuser2() {
 document.getElementById("text").innerHTML = "Welcome, User2!";
 }
-</script>
-<SCRIPT>
-function login2() {
-var testV = 1;
-var pass1 = prompt('Please Enter Your Password',' ');
-while (testV < 3) {
-if (!pass1)
-history.go(-1);
-if (pass1.toLowerCase() == "69420") {
-alert('You Got it Right!');
+function aloginuser1() {
+document.getElementById("user1").style.display = "block";
+document.getElementById("user2").style.display = "none";
+}
+function aloginuser2() {
+document.getElementById("user2").style.display = "block";
+document.getElementById("user1").style.display = "none";
+}
+function openuser1() {
+window.location.replace("kaostest.html")
+}
+function openuser2() {
+if (document.getElementById("input").value = "69420") {
 window.location.replace("kaostest2.html");
-break;
+} else {
+	window.alert("Incorrect Password!");
 }
-testV+=1;
-var pass1 =
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
 }
-if (pass1.toLowerCase()!="password" & testV ==3)
-history.go(-1);
-return " ";
-}
-</SCRIPT>
+</script>
 </div></section>
 </body>
 </html>

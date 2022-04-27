@@ -164,3 +164,24 @@ function minimizedterminal() {
     document.getElementById("minimizedterminal").style.display = "none";
   }
 }
+
+//kasiusnet
+
+function minimizebrowser() {
+  var x = document.getElementById("browser");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    document.getElementById("minimizedbrowser").style.display = "none";
+  } else {
+    minimizedbrowser()
+    x.style.display = "none";
+  }
+}
+
+function minimizedbrowser() {
+  if (document.getElementById("minimizedbrowser").style.display === "none") {
+    document.getElementById("minimizedbrowser").style.display = "block";
+  } else {
+    document.getElementById("minimizedbrowser").style.display = "none";
+  }
+}

@@ -96,3 +96,14 @@ function Closetestwindowterminal() {
     document.getElementById("terminalframe").src = ("");
   }
 }
+function browser() {
+  var x = document.getElementById("browser");
+  if (x.style.display === "none") {
+    document.getElementById("browserframe").src = ("kasiusnet.html");
+    document.getElementById("minimizedbrowser").style.display = "none";
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+    document.getElementById("browser").src = ("");
+  }
+}

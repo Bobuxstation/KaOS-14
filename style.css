@@ -25,7 +25,7 @@ footer {
    height: 30px;
    background-color: #75cbedA6;
    cursor: move;
-   border-radius: 2.5px 2.5px 0px 0px;
+   border-radius: 5px 5px 0px 0px;
    overflow: auto;
    backdrop-filter: blur(5px);
    webkit-backdrop-filter: blur(5px);
@@ -36,9 +36,10 @@ footer {
    margin: 0;
    padding: 0;
    height: 450px;
-   border-radius: 0px 0px 2.5px 2.5px;
+   border-radius: 0px 0px 5px 5px;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    border:  #75cbedA6 solid 2px;
+   border-width: 0px 2px 2px 2px;
 }
 .headertext {
     color: BLACK;
@@ -46,7 +47,7 @@ footer {
     border: black solid 0px;
     font-family: Inter;
     border-radius: 0px;
-    font-size: 15px;
+    font-size: 17.5px;
     padding-top: 5px;
     border-radius: 5px 0px 0px 0px;
     height: 30px;
@@ -56,7 +57,7 @@ footer {
     float: right;
     background: NONE;
     height: 100%;
-    width: 50px;
+    width: 40px;
     border: black solid 0px;
     border-radius: 0px 2.5px 0px 0px;
     font-size: 20px;
@@ -120,7 +121,8 @@ nav{
     flex-direction: column;
     border-radius: 5px 5px 0px 0px;
     backdrop-filter: blur(5px);
-  
+    bottom: 0;
+    margin-bottom: 30px;
 }
 .menubutton2 {
     background: none;
@@ -130,6 +132,7 @@ nav{
     float: left;
     text-align: left;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 button {
     padding: 2px;
@@ -156,9 +159,9 @@ button {
     float: right;
     background: NONE;
     height: 100%;
-    width: 50px;
+    width: 40px;
     border: black solid 0px;
-    font-size: 20px;
+    font-size: 13px;
 }
 .minimize:hover{
     background-color: red;
@@ -192,7 +195,8 @@ fieldset {
 }
 .settingssidebar {
   backdrop-filter: blur(5px);
-  background-color: #75cbed;
+  webkit-backdrop-filter: blur(5px);
+  background-color: #75cbedA6;
   webkit-backdrop-filter: blur(5px);
 }
 .Settings {
@@ -211,8 +215,11 @@ textarea {
   color: lightgray;
 }
 .search button,input {
-  border-radius: 2px;
+  border-radius: 2px !important;
 }
 .search input {
   background-color: lightgray;
+}
+#menutogglebutton {
+    background-color: #00a9ec40;
 }
