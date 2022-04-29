@@ -14,11 +14,14 @@ footer {
   margin: 0;
   padding: 0;
   backdrop-filter: blur(5px);
+  text-align: center;
 }
 .window {
     height: 0px;
     width: 0px;
     display: none;
+    animation: fadein;
+    animation-duration: 0.25s;
 }
 .header {
    width: 604px;
@@ -123,6 +126,8 @@ nav{
     backdrop-filter: blur(5px);
     bottom: 0;
     margin-bottom: 30px;
+    animation: fadein;
+    animation-duration: 0.25s;
 }
 .menubutton2 {
     background: none;
@@ -169,7 +174,7 @@ button {
 
 }
   .menubuttonminimized {
-    background-color: #0092cc;
+    background-color: #0092cc80;
     border: black solid 0px;
     color: black;
     float: left;
@@ -181,8 +186,7 @@ button {
   border-radius: 5px;
 }
 .menubutton:hover {
-  background-color:4dc0ed;
-  border-radius: 5px;
+  background-color: #4dc0ed40;
 }
 .notification {
   background-color: lightblue;
@@ -204,7 +208,7 @@ fieldset {
    webkit-backdrop-filter: blur(10px);
 }
   .menubuttonminimized:hover {
-      background-color:4dc0ed;
+      background-color: #4dc0ed20;
 }
 textarea {
   padding: 5px;
@@ -222,4 +226,12 @@ textarea {
 }
 #menutogglebutton {
     background-color: #00a9ec40;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

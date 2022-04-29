@@ -14,11 +14,14 @@ body {
     margin: 0;
     padding: 0;
     backdrop-filter: blur(9px);
+    text-align: center;
   }
   .window {
       height: 0px;
       width: 0px;
       display: none;
+      animation: fadein;
+      animation-duration: 0.25s;
   }
   .header {
      width: 604px;
@@ -39,6 +42,7 @@ body {
      border-radius: 0px 0px 5px 5px;
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      border:  #1d1d1dA6 solid 2px;
+     border-width: 0px 2px 2px 2px;
   }
   .headertext {
       color: white;
@@ -121,6 +125,8 @@ body {
       backdrop-filter: blur(60px);
       bottom: 0;
       margin-bottom: 30px;
+      animation: fadein;
+      animation-duration: 0.25s;
   }
   .menubutton2 {
       background: none;
@@ -204,7 +210,7 @@ body {
      webkit-backdrop-filter: blur(10px);
   }
     .menubuttonminimized:hover {
-        background-color:4dc0ed;
+        background-color: #232323;
   }
   textarea {
     padding: 5px;
@@ -215,11 +221,19 @@ body {
     color: lightgray;
   }
   .search button,input {
-    border-radius: 2px;
+    border-radius: 2px !important;
   }
   .search input {
     background-color: lightgray;
   }
   #menutogglebutton {
     background-color: #23232366;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

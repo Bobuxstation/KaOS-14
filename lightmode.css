@@ -14,11 +14,14 @@ body {
     margin: 0;
     padding: 0;
     backdrop-filter: blur(9px);
+    text-align: center;
   }
   .window {
       height: 0px;
       width: 0px;
       display: none;
+      animation: fadein;
+      animation-duration: 0.25s;
   }
   .header {
      width: 604px;
@@ -39,12 +42,13 @@ body {
      border-radius: 0px 0px 2.5px 2.5px;
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      border:  #C4C4C4A6 solid 2px;
+     border-width: 0px 2px 2px 2px;
   }
   .headertext {
       background: NONE;
       border: black solid 0px;
       font-family: Inter;
-      font-size: 15px;
+      font-size: 17.5px;
       padding-top: 5px;
       height: 30px;
       padding-left: 5px;
@@ -53,7 +57,7 @@ body {
       float: right;
       background: NONE;
       height: 100%;
-      width: 50px;
+      width: 40px;
       border: black solid 0px;
       border-radius: 0px 2.5px 0px 0px;
       font-size: 20px;
@@ -117,7 +121,8 @@ body {
       flex-direction: column;
       border-radius: 5px 5px 0px 0px;
       backdrop-filter: blur(60px);
-    
+        animation: fadein;
+    animation-duration: 0.25s;
   }
   .menubutton2 {
       background: none;
@@ -127,6 +132,7 @@ body {
       float: left;
       text-align: left;
       font-size: 20px;
+      margin-bottom: 10px;
   }
   button {
       padding: 2px;
@@ -153,9 +159,9 @@ body {
       float: right;
       background: NONE;
       height: 100%;
-      width: 50px;
+      width: 40px;
       border: black solid 0px;
-      font-size: 20px;
+      font-size: 17.5px;
   }
   .minimize:hover{
       background-color: red;
@@ -190,7 +196,7 @@ body {
   .settingssidebar {
     backdrop-filter: blur(5px);
     webkit-backdrop-filter: blur(5px);
-    background: #C4C4C4;
+    background: #C4C4C4A6;
     color: black;
   }
   .Settings {
@@ -209,8 +215,16 @@ body {
     color: lightgray;
   }
   .search button,input {
-    border-radius: 2px;
+    border-radius: 2px !important;
   }
   .search input {
     background-color: lightgray;
   }
+  @keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
