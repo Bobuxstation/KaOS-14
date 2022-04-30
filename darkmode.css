@@ -9,11 +9,11 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #1d1d1d80;
-    height: 30px;
+    background-color: #1d1d1dBF;
+    height: 40px;
     margin: 0;
     padding: 0;
-    backdrop-filter: blur(9px);
+    backdrop-filter: blur(10px);
     text-align: center;
   }
   .window {
@@ -30,8 +30,8 @@ body {
      cursor: move;
      border-radius: 5px 5px 0px 0px;
      overflow: auto;
-     backdrop-filter: blur(5px);
-     webkit-backdrop-filter: blur(5px);
+     backdrop-filter: blur(10px);
+     webkit-backdrop-filter: blur(10px);
     
   }
   .content {
@@ -74,8 +74,13 @@ body {
       border: black solid 0px;
       color: black;
       float: left;
-      background-image:url("");
+      height: 40px;
+      padding: 8px !important;
   }
+.menubutton img {
+  height: 24px !important;
+  width: 24px !important;
+}
   li {
       float: left;
       display: block;
@@ -83,6 +88,7 @@ body {
   *{
       margin: 0;
       padding: 0;
+      user-select: none;
   }
   
   nav{
@@ -118,13 +124,13 @@ body {
       z-index:1;
       overflow:auto;
       padding: 2.5px;
-      background-color: #1d1d1d80;
+      background-color: #1d1d1dBF;
       display: flex;
       flex-direction: column;
       border-radius: 5px 5px 0px 0px;
-      backdrop-filter: blur(60px);
+      backdrop-filter: blur(10px);
       bottom: 0;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       animation: fadein;
       animation-duration: 0.25s;
   }
@@ -152,8 +158,10 @@ body {
       top: -1;
       display: none;
       border-radius: 5px;
-      backdrop-filter: blur(50px);
+      backdrop-filter: blur(10px);
       color: white;
+      animation: fadein;
+      animation-duration: 0.25s;
   }
   .list {
       width: 60%;
@@ -178,16 +186,15 @@ body {
       border: black solid 0px;
       color: black;
       float: left;
-      padding: 2.5px;
-      font-size: 15px
+      padding: 8px;
+      font-size: 15px;
+      height: 40px;
   }
   .menubutton2:hover {
     background-color: #23232366;
-    border-radius: 5px;
   }
   .menubutton:hover {
-    background-color: #232323;
-    border-radius: 5px;
+    background-color: #232323AB;
   }
   .notification {
     background-color: #232323;
@@ -200,8 +207,8 @@ body {
     padding: 5px;
   }
   .settingssidebar {
-    backdrop-filter: blur(5px);
-    webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    webkit-backdrop-filter: blur(10px);
     background: #1d1d1dA6;
     color: white;
   }
@@ -210,7 +217,7 @@ body {
      webkit-backdrop-filter: blur(10px);
   }
     .menubuttonminimized:hover {
-        background-color: #232323;
+        background-color: #232323AB;
   }
   textarea {
     padding: 5px;
